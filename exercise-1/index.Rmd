@@ -1,0 +1,21 @@
+---
+title: "Movie Review"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("exercise.R")
+```
+
+## `r headline`
+
+Below is a summary about `r movie_name` from the New York Times:
+
+> `r short_summary`
+
+``` {r, include=FALSE}
+link_markdown <- paste0("[this link](", link, ")")
+```
+
+Follow `r link_markdown` to read the full review.
